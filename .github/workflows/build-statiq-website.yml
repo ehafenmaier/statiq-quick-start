@@ -13,6 +13,9 @@ jobs:
     runs-on: ubuntu-latest
     name: Build statiq website
     steps:
+      # Print out git config settings
+      - name: Print out git config settings
+        run: git config -l
       # Checkout codebase including submodules
       - name: Checkout code & submodules
         uses: actions/checkout@v3
